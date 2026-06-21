@@ -1,45 +1,65 @@
+```markdown
 # Monitor Gempa Indonesia
 
-> Dashboard visualisasi 15 kejadian gempa bumi M5.0+ paling terkini di Indonesia, datanya langsung dari feed resmi BMKG.
+Dashboard interaktif untuk memvisualisasikan 15 kejadian gempa bumi berkekuatan M5.0 ke atas di Indonesia berdasarkan data resmi BMKG. Project ini dibuat sebagai tugas visualisasi data dengan tujuan menyajikan informasi gempa dalam bentuk grafik yang lebih mudah dipahami dibandingkan data mentah.
 
-🌐 Demo: https://nama-kelompok.vercel.app 
+🌐 **Live Demo**  
+https://dashboard-gempa-indonesia.vercel.app/
 
-## Isi Dashboard
+---
 
-- Chart 1: Scatter/Bubble Map — sebaran lokasi 15 titik gempa (lintang × bujur), ukuran bubble proporsional ke magnitudo
-- Chart 2: Line Chart — tren magnitudo secara kronologis dari 9–20 Juni 2026, dengan highlight merah pada anomali M6.7
-- Chart 3: Horizontal Bar Chart — jumlah kejadian per wilayah pemantauan BMKG
-- Chart 4: Doughnut Chart — proporsi kategori kedalaman gempa (dangkal / menengah / dalam)
-- Fitur interaktif: Tooltip Chart.js (hover di semua chart) + tabel data yang bisa diurutkan dengan klik header kolom
-- Animasi: Entrance animation Chart.js (default) + count-up number pada 4 KPI di hero section + fade-in CSS pada teks hero
+## Fitur Dashboard
+
+Dashboard menampilkan empat jenis visualisasi yang saling melengkapi, yaitu:
+
+- **Scatter/Bubble Map** untuk menunjukkan persebaran lokasi gempa berdasarkan koordinat lintang dan bujur. Ukuran bubble merepresentasikan besar magnitudo gempa.
+- **Line Chart** yang memperlihatkan perubahan magnitudo secara kronologis pada rentang data yang digunakan, sehingga pola maupun kejadian dengan magnitudo tinggi lebih mudah dikenali.
+- **Horizontal Bar Chart** yang membandingkan jumlah kejadian gempa pada setiap wilayah pemantauan BMKG.
+- **Doughnut Chart** untuk menampilkan proporsi kategori kedalaman gempa, yaitu dangkal, menengah, dan dalam.
+
+Selain visualisasi utama, dashboard juga dilengkapi dengan beberapa fitur pendukung, seperti:
+
+- Tooltip interaktif pada setiap chart untuk menampilkan informasi detail saat kursor diarahkan ke data.
+- Tabel data yang dapat diurutkan berdasarkan kolom yang dipilih.
+- Animasi pada grafik serta efek *count-up* pada indikator utama (KPI) untuk meningkatkan pengalaman pengguna.
+
+---
 
 ## Sumber Data
 
-- Nama dataset: Data Gempabumi Terbuka BMKG — Gempabumi M 5.0+
-- URL sumber: https://data.bmkg.go.id/DataMKG/TEWS/gempaterkini.xml
-- Penyedia: Badan Meteorologi, Klimatologi, dan Geofisika (BMKG) Republik Indonesia
-- Jumlah baris: 15 kejadian gempa
-- Diakses pada: 21 Juni 2026
+Dataset yang digunakan berasal dari **Data Gempabumi Terbuka BMKG** dengan kategori **Gempabumi M5.0+**.
 
-## Cara Jalankan di Lokal
+- **Penyedia:** Badan Meteorologi, Klimatologi, dan Geofisika (BMKG)
+- **Sumber Data:** https://data.bmkg.go.id/DataMKG/TEWS/gempaterkini.xml
+- **Jumlah Data:** 15 kejadian gempa
+- **Tanggal Akses:** 21 Juni 2026
 
+---
+
+## Menjalankan Project
+
+Project ini merupakan website statis sehingga tidak memerlukan proses instalasi dependency maupun build.
+
+Cukup buka file `index.html` menggunakan browser, atau jalankan melalui **Live Server** di Visual Studio Code.
+
+---
+
+## Teknologi yang Digunakan
+
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
+- Chart.js v4.4.4 (dibundle secara lokal)
+- Vercel (Deployment)
+
+---
+
+## Anggota Kelompok
+
+| NIM | Nama |
+|------|------|
+| 103012300455 | Ziyad Fathir Al Biaroza |
+| 103012300399 | Muhammad Ridwan Arrayyan |
+| 103012300107 | Zweta Lathifah Kus Aliyyah |
+| 103012300140 | Farazahwa J Michelle |
 ```
-# Jalur A (static):
-Buka index.html langsung di browser (atau pakai Live Server di VS Code)
-```
-
-Tidak perlu npm install — semua dependency (Chart.js) sudah di-bundle lokal di file `chart.umd.min.js`, tidak ada koneksi ke CDN eksternal yang dibutuhkan.
-
-## Teknologi
-
-- Chart.js v4.4.4 (visualisasi, dibundle lokal)
-- HTML + CSS + JavaScript (vanilla, tanpa framework)
-- Vercel (deployment)
-
-## Anggota
-
-- 103012300455 – Ziyad Fathir Al Biaroza
-- 103012300399 – Muhammad Ridwan Arrayyan
-- 103012300107 – Zweta Lathifah Kus Aliyyah
-- 103012300140 – Farazahwa J Michelle
-
