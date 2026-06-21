@@ -2,7 +2,7 @@
 
 > Dashboard visualisasi 15 kejadian gempa bumi M5.0+ paling terkini di Indonesia, datanya langsung dari feed resmi BMKG.
 
-🌐 Demo: https://nama-kelompok.vercel.app *(ganti dengan URL Vercel setelah deploy)*
+🌐 Demo: https://nama-kelompok.vercel.app 
 
 ## Isi Dashboard
 
@@ -38,6 +38,8 @@ Tidak perlu npm install — semua dependency (Chart.js) sudah di-bundle lokal di
 
 ## Anggota
 
-- Ziyad (NIM) ← lengkapi dengan NIM dan anggota lain jika berkelompok
-
+- 103012300455 – Ziyad Fathir Al Biaroza
+- 103012300399 – Muhammad Ridwan Arrayyan
+- 103012300107 – Zweta Lathifah Kus Aliyyah
+- 103012300140 – Farazahwa J Michelle
 
